@@ -260,3 +260,76 @@ body{
     font-size:1.1rem;
     line-height:1.7;
 }
+/* ================= FOOTER ================= */
+
+.footer-section{
+    background:var(--color-primario);
+    color:var(--color-blanco);
+    padding:70px 0 25px;
+}
+
+.footer-section h3{
+    font-size:1.7rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.footer-section h4{
+    font-size:1.1rem;
+    font-weight:700;
+    margin-bottom:20px;
+}
+
+.footer-section p{
+    color:#CBD5E1;
+    line-height:1.7;
+    margin-bottom:0;
+}
+
+.footer-section ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.footer-section ul li{
+    margin-bottom:10px;
+}
+
+.footer-section ul li a{
+    color:#CBD5E1;
+    text-decoration:none;
+    transition:0.3s ease;
+}
+
+.footer-section ul li a:hover{
+    color:var(--color-secundario);
+}
+
+.footer-whatsapp{
+    display:inline-block;
+    margin-top:15px;
+    color:var(--color-blanco);
+    background:var(--color-secundario);
+    padding:12px 22px;
+    border-radius:10px;
+    text-decoration:none;
+    font-weight:600;
+    transition:0.3s ease;
+}
+
+.footer-whatsapp:hover{
+    background:#0284C7;
+    color:var(--color-blanco);
+}
+
+.footer-bottom{
+    border-top:1px solid rgba(255,255,255,0.12);
+    margin-top:50px;
+    padding-top:25px;
+    text-align:center;
+}
+
+.footer-bottom p{
+    font-size:0.9rem;
+}
