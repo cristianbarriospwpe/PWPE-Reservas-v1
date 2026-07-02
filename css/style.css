@@ -113,6 +113,8 @@ body{
 .hero-img{
     border-radius:24px;
     box-shadow:0 25px 60px rgba(0,0,0,0.35);
+
+
 }/* ================= BENEFÍCIOS ================= */
 
 .benefits-section{
@@ -180,4 +182,51 @@ body{
     color:var(--color-texto);
     line-height:1.7;
     margin:0;
+}
+/* ================= COMO FUNCIONA ================= */
+
+.how-section{
+    padding:110px 0;
+    background:var(--color-blanco);
+}
+
+.steps-wrapper{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+.step-item{
+    display:flex;
+    gap:25px;
+    background:var(--color-fondo);
+    padding:30px;
+    border-radius:22px;
+    box-shadow:0 15px 40px rgba(15,23,42,0.06);
+}
+
+.step-number{
+    min-width:65px;
+    height:65px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:var(--color-primario);
+    color:var(--color-blanco);
+    border-radius:18px;
+    font-weight:700;
+    font-size:1.2rem;
+}
+
+.step-item h3{
+    color:var(--color-primario);
+    font-size:1.3rem;
+    font-weight:700;
+    margin-bottom:10px;
+}
+
+.step-item p{
+    margin:0;
+    color:var(--color-texto);
+    line-height:1.7;
 }
