@@ -333,3 +333,46 @@ body{
 .footer-bottom p{
     font-size:0.9rem;
 }
+
+/* ================= PARA QUEM É ================= */
+
+.audience-section{
+    padding:110px 0;
+    background:var(--color-blanco);
+}
+
+.audience-card{
+    background:var(--color-fondo);
+    padding:30px;
+    border-radius:22px;
+    height:100%;
+    display:flex;
+    align-items:center;
+    gap:18px;
+    box-shadow:0 12px 35px rgba(15,23,42,0.05);
+    transition:0.3s ease;
+}
+
+.audience-card:hover{
+    transform:translateY(-6px);
+    box-shadow:0 22px 50px rgba(15,23,42,0.10);
+}
+
+.audience-card span{
+    width:58px;
+    height:58px;
+    min-width:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#E0F2FE;
+    border-radius:16px;
+    font-size:1.7rem;
+}
+
+.audience-card h3{
+    margin:0;
+    color:var(--color-primario);
+    font-size:1.2rem;
+    font-weight:700;
+}
