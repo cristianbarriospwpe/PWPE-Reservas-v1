@@ -21,7 +21,7 @@ body{
 
     background:var(--color-fondo);
     color:var(--color-texto);
-    font-family:Arial, Helvetica, sans-serif;
+   font-family:'Poppins', sans-serif;
 
 }
 
@@ -113,4 +113,71 @@ body{
 .hero-img{
     border-radius:24px;
     box-shadow:0 25px 60px rgba(0,0,0,0.35);
+}/* ================= BENEFÍCIOS ================= */
+
+.benefits-section{
+    padding:110px 0;
+    background:var(--color-fondo);
+}
+
+.section-badge{
+    display:inline-block;
+    background:#E0F2FE;
+    color:var(--color-secundario);
+    padding:8px 16px;
+    border-radius:999px;
+    font-size:0.9rem;
+    font-weight:600;
+}
+
+.section-title{
+    color:var(--color-primario);
+    font-size:2.5rem;
+    font-weight:700;
+}
+
+.section-description{
+    max-width:700px;
+    margin:15px auto 0;
+    color:var(--color-texto);
+    font-size:1.1rem;
+}
+
+.benefit-card{
+    background:var(--color-blanco);
+    padding:35px;
+    border-radius:22px;
+    height:100%;
+    box-shadow:0 15px 40px rgba(15,23,42,0.08);
+    transition:0.3s ease;
+}
+
+.benefit-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 60px rgba(15,23,42,0.12);
+}
+
+.benefit-icon{
+    width:60px;
+    height:60px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#E0F2FE;
+    border-radius:16px;
+    font-size:1.8rem;
+    margin-bottom:25px;
+}
+
+.benefit-card h3{
+    color:var(--color-primario);
+    font-size:1.4rem;
+    font-weight:700;
+    margin-bottom:15px;
+}
+
+.benefit-card p{
+    color:var(--color-texto);
+    line-height:1.7;
+    margin:0;
 }
