@@ -17,6 +17,10 @@
 
 /* ================= GENERALES ================= */
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
 
     background:var(--color-fondo);
