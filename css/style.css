@@ -579,7 +579,7 @@ body {
 /* ================= RESERVAS DEMO ================= */
 
 .booking-section {
-    padding: 110px 0;
+    padding: 110px 0 80px;
     background: linear-gradient(135deg, #EAF7FF 0%, #FFFFFF 55%, #F8FAFC 100%);
 }
 
@@ -693,4 +693,37 @@ span.flatpickr-weekday {
     color: var(--color-primario);
     background: var(--color-blanco);
     border-color: var(--color-blanco);
+}
+
+/* ================= FOOTER POUSADA ================= */
+
+.pousada-footer {
+    padding: 70px 0 30px;
+    background: var(--color-primario);
+    color: var(--color-blanco);
+}
+
+.pousada-footer h3 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.pousada-footer p {
+    color: #CBD5E1;
+    margin-bottom: 12px;
+}
+
+.pousada-footer hr {
+    border-color: rgba(255, 255, 255, 0.15);
+    margin: 40px 0 20px;
+}
+
+.footer-demo-copy {
+    text-align: center;
+}
+
+.footer-demo-copy p {
+    margin: 0;
+    font-size: 0.95rem;
 }
