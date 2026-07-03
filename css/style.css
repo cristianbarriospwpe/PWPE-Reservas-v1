@@ -679,3 +679,18 @@ span.flatpickr-weekday {
     color: var(--color-blanco) !important;
     fill: var(--color-blanco) !important;
 }
+
+/* ================= BOTÓN DEMO HERO ================= */
+
+.btn-demo-hero {
+    color: var(--color-blanco);
+    border: 1px solid rgba(255, 255, 255, 0.55);
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(8px);
+}
+
+.btn-demo-hero:hover {
+    color: var(--color-primario);
+    background: var(--color-blanco);
+    border-color: var(--color-blanco);
+}
