@@ -36,7 +36,7 @@ body {
 
     background: var(--color-blanco) !important;
 
-    padding: 18px 0;
+    padding: 8px 0;
 
 }
 
@@ -46,6 +46,11 @@ body {
 
     font-size: 1.7rem;
 
+}
+
+.navbar-logo{
+    height:80px;
+    width:auto;
 }
 
 .nav-link {
@@ -442,5 +447,10 @@ body {
     .cta-box h2 {
         font-size: 2rem;
     }
+
+   .navbar-logo {
+    height: 55px;
+    width: auto;
+}
 
 }
