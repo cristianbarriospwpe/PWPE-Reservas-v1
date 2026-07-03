@@ -20,6 +20,7 @@
 
 html {
     scroll-behavior: smooth;
+    color-scheme: light;
 }
 
 body {
@@ -33,11 +34,13 @@ body {
 /* ================= NAVBAR ================= */
 
 .navbar {
-
-    background: var(--color-blanco) !important;
-
+    background-color: #FFFFFF !important;
+    background: #FFFFFF !important;
     padding: 8px 0;
+}
 
+.navbar .container {
+    background: transparent;
 }
 
 .navbar-brand {
