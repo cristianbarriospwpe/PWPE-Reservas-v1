@@ -17,6 +17,9 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
 
+    <!-- Calendario moderno -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/themes/material_blue.css">
     <!-- Nuestro CSS -->
     <link rel="stylesheet" href="css/style.css?v=4">
 
@@ -231,170 +234,179 @@
 
     </section>
 
-    <!-- ================= RESERVAS ================= -->
+   <!-- ================= RESERVAS ================= -->
 
-    <section id="reservas" class="booking-section">
+<section id="reservas" class="booking-section">
 
-        <div class="container">
+    <div class="container">
 
-            <div class="row align-items-center">
+        <div class="row align-items-center">
 
-                <div class="col-lg-5">
+            <div class="col-lg-5">
 
-                    <span class="section-badge">
-                        Reservas
-                    </span>
+                <span class="section-badge">
+                    Reservas
+                </span>
 
-                    <h2 class="section-title mt-3">
-                        Consulte disponibilidade para sua estadia
-                    </h2>
+                <h2 class="section-title mt-3">
+                    Consulte disponibilidade para sua estadia
+                </h2>
 
-                    <p class="section-description text-start mx-0">
-                        Preencha os dados abaixo e nossa equipe entrará em contato para confirmar valores, disponibilidade e formas de pagamento.
+                <p class="section-description text-start mx-0">
+                    Preencha os dados abaixo e nossa equipe entrará em contato para confirmar valores, disponibilidade e formas de pagamento.
+                </p>
+
+                <div class="booking-info">
+
+                    <p>
+                        ✅ Confirmação pelo WhatsApp
                     </p>
 
-                    <div class="booking-info">
+                    <p>
+                        ✅ Possibilidade de sinal via Pix
+                    </p>
 
-                        <p>
-                            ✅ Confirmação pelo WhatsApp
-                        </p>
-
-                        <p>
-                            ✅ Possibilidade de sinal via Pix
-                        </p>
-
-                        <p>
-                            ✅ Atendimento rápido e personalizado
-                        </p>
-
-                    </div>
-
-                </div>
-
-                <div class="col-lg-7 mt-5 mt-lg-0">
-
-                    <form class="booking-form" id="bookingForm">
-
-                        <div class="row g-3">
-
-                            <div class="col-12 col-md-6">
-
-                                <label for="nomeReserva">
-                                    Nome completo
-                                </label>
-
-                                <input type="text"
-                                       class="form-control"
-                                       id="nomeReserva"
-                                       placeholder="Seu nome">
-
-                            </div>
-
-                            <div class="col-12 col-md-6">
-
-                                <label for="whatsappReserva">
-                                    WhatsApp
-                                </label>
-
-                                <input type="text"
-                                       class="form-control"
-                                       id="whatsappReserva"
-                                       placeholder="(22) 99999-9999">
-
-                            </div>
-
-                            <div class="col-12 col-md-6">
-
-                                <label for="entradaReserva">
-                                    Entrada
-                                </label>
-
-                                <input type="date"
-                                       class="form-control"
-                                       id="entradaReserva">
-
-                            </div>
-
-                            <div class="col-12 col-md-6">
-
-                                <label for="saidaReserva">
-                                    Saída
-                                </label>
-
-                                <input type="date"
-                                       class="form-control"
-                                       id="saidaReserva">
-
-                            </div>
-
-                            <div class="col-12 col-md-6">
-
-                                <label for="hospedesReserva">
-                                    Hóspedes
-                                </label>
-
-                                <select class="form-select" id="hospedesReserva">
-                                    <option selected>Selecionar</option>
-                                    <option>1 hóspede</option>
-                                    <option>2 hóspedes</option>
-                                    <option>3 hóspedes</option>
-                                    <option>4 hóspedes ou mais</option>
-                                </select>
-
-                            </div>
-
-                            <div class="col-12 col-md-6">
-
-                                <label for="acomodacaoReserva">
-                                    Acomodação
-                                </label>
-
-                                <select class="form-select" id="acomodacaoReserva">
-                                    <option selected>Selecionar</option>
-                                    <option>Suíte Casal</option>
-                                    <option>Suíte Família</option>
-                                    <option>Suíte Premium</option>
-                                </select>
-
-                            </div>
-
-                            <div class="col-12">
-
-                                <label for="observacoesReserva">
-                                    Observações
-                                </label>
-
-                                <textarea class="form-control"
-                                          id="observacoesReserva"
-                                          rows="4"
-                                          placeholder="Ex: chegada à noite, criança, pet, garagem..."></textarea>
-
-                            </div>
-
-                            <div class="col-12">
-
-                                <button type="button"
-                                        class="btn btn-primary btn-lg w-100"
-                                        id="btnEnviarReserva">
-                                    Enviar pedido de reserva
-                                </button>
-
-                            </div>
-
-                        </div>
-
-                    </form>
+                    <p>
+                        ✅ Atendimento rápido e personalizado
+                    </p>
 
                 </div>
 
             </div>
 
+            <div class="col-lg-7 mt-5 mt-lg-0">
+
+                <form class="booking-form" id="bookingForm">
+
+                    <div class="row g-3">
+
+                        <div class="col-12 col-md-6">
+
+                            <label for="nomeReserva">
+                                Nome completo
+                            </label>
+
+                            <input type="text"
+                                   class="form-control"
+                                   id="nomeReserva"
+                                   placeholder="Seu nome">
+
+                        </div>
+
+                        <div class="col-12 col-md-6">
+
+                            <label for="whatsappReserva">
+                                WhatsApp
+                            </label>
+
+                            <input type="text"
+                                   class="form-control"
+                                   id="whatsappReserva"
+                                   placeholder="(22) 99999-9999">
+
+                        </div>
+
+                        <div class="col-12 col-md-6">
+
+                            <label for="entradaReserva">
+                                Entrada
+                            </label>
+
+                            <input type="text"
+                                   class="form-control datepicker"
+                                   id="entradaReserva"
+                                   placeholder="Data de entrada"
+                                   readonly>
+
+                        </div>
+
+                        <div class="col-12 col-md-6">
+
+                            <label for="saidaReserva">
+                                Saída
+                            </label>
+
+                            <input type="text"
+                                   class="form-control datepicker"
+                                   id="saidaReserva"
+                                   placeholder="Data de saída"
+                                   readonly>
+
+                        </div>
+
+                        <div class="col-12 col-md-6">
+
+                            <label for="hospedesReserva">
+                                Hóspedes
+                            </label>
+
+                            <select class="form-select" id="hospedesReserva">
+                                <option selected>Selecionar</option>
+                                <option>1 hóspede</option>
+                                <option>2 hóspedes</option>
+                                <option>3 hóspedes</option>
+                                <option>4 hóspedes ou mais</option>
+                            </select>
+
+                        </div>
+
+                        <div class="col-12 col-md-6">
+
+                            <label for="acomodacaoReserva">
+                                Acomodação
+                            </label>
+
+                            <select class="form-select" id="acomodacaoReserva">
+                                <option selected>Selecionar</option>
+                                <option>Suíte Casal</option>
+                                <option>Suíte Família</option>
+                                <option>Suíte Premium</option>
+                            </select>
+
+                        </div>
+
+                        <div class="col-12">
+
+                            <label for="observacoesReserva">
+                                Observações
+                            </label>
+
+                            <textarea class="form-control"
+                                      id="observacoesReserva"
+                                      rows="4"
+                                      placeholder="Ex: chegada à noite, criança, pet, garagem..."></textarea>
+
+                        </div>
+
+                        <div class="col-12">
+
+                            <button type="button"
+                                    class="btn btn-primary btn-lg w-100"
+                                    id="btnEnviarReserva">
+                                Enviar pedido de reserva
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </form>
+
+            </div>
+
         </div>
 
-    </section>
+    </div>
+
+</section>
+
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Calendario moderno -->
+<script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+<script src="https://cdn.jsdelivr.net/npm/flatpickr/dist/l10n/pt.js"></script>
 
     <!-- Nuestro JavaScript -->
     <script src="js/main.js"></script>

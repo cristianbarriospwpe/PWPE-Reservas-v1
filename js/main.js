@@ -37,3 +37,16 @@ Observações: ${observacoes}
     });
 
 }
+
+// ================= CALENDARIO MODERNO =================
+
+if (typeof flatpickr !== "undefined") {
+
+    flatpickr(".datepicker", {
+        locale: "pt",
+        dateFormat: "d/m/Y",
+        minDate: "today",
+        disableMobile: true
+    });
+
+}
