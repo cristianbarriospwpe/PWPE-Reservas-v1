@@ -380,3 +380,57 @@ body{
     font-size:1.2rem;
     font-weight:700;
 }
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 768px){
+
+    .navbar .btn{
+        margin-top:15px;
+        width:100%;
+    }
+
+    .hero-section{
+        padding:80px 0;
+        text-align:center;
+    }
+
+    .hero-section h1{
+        font-size:2.6rem;
+    }
+
+    .hero-section p{
+        font-size:1rem;
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .hero-img{
+        margin-top:30px;
+    }
+
+    .hero-section .btn{
+    margin-bottom:20px;
+}
+
+    .section-title{
+        font-size:2rem;
+    }
+
+    .section-description{
+        font-size:1rem;
+    }
+
+    .step-item{
+        flex-direction:column;
+    }
+
+    .cta-box{
+        padding:45px 25px;
+    }
+
+    .cta-box h2{
+        font-size:2rem;
+    }
+
+}
