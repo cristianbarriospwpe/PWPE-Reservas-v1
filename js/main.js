@@ -16,21 +16,24 @@ if (btnEnviarReserva) {
 
         const numeroWhatsApp = "5522992231382";
 
-        const mensagem = `
-Olá, gostaria de consultar uma reserva na Pousada Mar Azul.
+const mensagem = [
+    "Olá, gostaria de consultar uma reserva na Pousada Mar Azul.",
+    "",
+    "Dados da reserva:",
+    "",
+    `- Nome: ${nome}`,
+    `- WhatsApp: ${whatsapp}`,
+    `- Entrada: ${entrada}`,
+    `- Saída: ${saida}`,
+    `- Hóspedes: ${hospedes}`,
+    `- Acomodação: ${acomodacao}`,
+    "",
+    `- Observações: ${observacoes || "Nenhuma observação"}`
+].join("\n");
 
-Nome: ${nome}
-WhatsApp: ${whatsapp}
-Entrada: ${entrada}
-Saída: ${saida}
-Hóspedes: ${hospedes}
-Acomodação: ${acomodacao}
-Observações: ${observacoes}
-        `;
+const mensagemCodificada = encodeURIComponent(mensagem);
 
-        const mensagemCodificada = encodeURIComponent(mensagem);
-
-        const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
+const linkWhatsApp = `https://wa.me/${numeroWhatsApp}?text=${mensagemCodificada}`;
 
         window.open(linkWhatsApp, "_blank");
 

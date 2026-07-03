@@ -680,6 +680,7 @@ span.flatpickr-weekday {
     fill: var(--color-blanco) !important;
 }
 
+
 /* ================= BOTÓN DEMO HERO ================= */
 
 .btn-demo-hero {
@@ -694,6 +695,8 @@ span.flatpickr-weekday {
     background: var(--color-blanco);
     border-color: var(--color-blanco);
 }
+
+
 
 /* ================= FOOTER POUSADA ================= */
 
@@ -726,4 +729,89 @@ span.flatpickr-weekday {
 .footer-demo-copy p {
     margin: 0;
     font-size: 0.95rem;
+}
+
+/* ================= FUNCIONALIDADES DEMO ================= */
+
+.demo-features-section {
+    padding: 100px 0;
+    background: #F8FAFC;
+}
+
+.demo-feature-card {
+    height: 100%;
+    background: var(--color-blanco);
+    padding: 35px;
+    border-radius: 24px;
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.08);
+    transition: 0.3s ease;
+}
+
+.demo-feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 28px 65px rgba(15, 23, 42, 0.13);
+}
+
+.demo-feature-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
+    background: rgba(9, 120, 245, 0.10);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.7rem;
+    margin-bottom: 22px;
+}
+
+.demo-feature-card h3 {
+    color: var(--color-primario);
+    font-size: 1.35rem;
+    font-weight: 700;
+    margin-bottom: 14px;
+}
+
+.demo-feature-card p {
+    color: var(--color-texto);
+    line-height: 1.7;
+    margin: 0;
+}
+
+
+/* ================= FIX LINEA CALENDARIO ================= */
+
+.flatpickr-calendar,
+.flatpickr-calendar * {
+    box-shadow: none;
+}
+
+.flatpickr-weekdays {
+    background: var(--color-secundario) !important;
+    border: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.flatpickr-weekdaycontainer {
+    background: var(--color-secundario) !important;
+    border: none !important;
+}
+
+.flatpickr-days {
+    border: none !important;
+    margin-top: 0 !important;
+    background: var(--color-blanco) !important;
+}
+
+.flatpickr-innerContainer,
+.flatpickr-rContainer,
+.dayContainer {
+    border: none !important;
+    background: var(--color-blanco) !important;
+}
+
+span.flatpickr-weekday {
+    background: var(--color-secundario) !important;
+    color: var(--color-blanco) !important;
+    border: none !important;
 }
